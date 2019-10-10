@@ -8,8 +8,4 @@ const Message = ({ helloMsg }) => {
 	return (<div>Here's my message: <b>{ helloMsg }</b></div>);
 };
 
-Message.propTypes = {
-	helloMsg: React.PropTypes.string
-};
-
 export default Message;

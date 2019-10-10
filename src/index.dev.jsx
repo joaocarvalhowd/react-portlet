@@ -11,20 +11,12 @@
 import { AppContainer } from 'react-hot-loader';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import configureStore from 'store/configureStore.dev';
 import Router from 'routes/router';
-
-const store = configureStore({
-	helloMsg: 'Monator is awesome'
-});
 
 const rootEl = document.getElementById('root');
 ReactDOM.render(
 	<AppContainer>
-		<Provider store={ store } >
-			<Router />
-		</Provider>
+		<div>Hello world</div>
 	</AppContainer>,
 	rootEl
 );
@@ -38,9 +30,7 @@ if (module.hot) {
 
 		ReactDOM.render(
 			<AppContainer>
-				<Provider store={ store } >
-					<NextRouter />
-				</Provider>
+				<div>Hello world</div>
 			</AppContainer>,
 			rootEl
 		);

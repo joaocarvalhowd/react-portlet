@@ -8,10 +8,4 @@ const Counter = ({ counter, add, subtract }) => (
 	</div>
 );
 
-Counter.propTypes = {
-	counter: React.PropTypes.number.isRequired,
-	add: React.PropTypes.func.isRequired,
-	subtract: React.PropTypes.func.isRequired
-};
-
 export default Counter;

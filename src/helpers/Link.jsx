@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link as RRLink } from 'react-router';
+import { Link as RRLink } from 'react-router-dom';
 
 import { createURL } from 'helpers/url';
 
@@ -12,10 +12,5 @@ import { createURL } from 'helpers/url';
 const Link = ({ children, to, ...rest }) => (
 	<RRLink { ...rest } to={ createURL(to) }>{children}</RRLink>
 );
-
-Link.propTypes = {
-	children: React.PropTypes.any,
-	to: React.PropTypes.string
-};
 
 export default Link;

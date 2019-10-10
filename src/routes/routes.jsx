@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { urlParts, createRouteURL } from 'helpers/url';
-import { IndexRoute, Route } from 'react-router';
+import { Route } from 'react-router-dom';
 
 import App from 'components/dumb/App/App';
 import Home from 'components/dumb/Home/Home';
@@ -12,7 +12,6 @@ import CounterContainer from 'components/smart/CounterContainer/CounterContainer
 
 const routes = (
 	<Route path={ urlParts.pagePrefix } component={ App }>
-		<IndexRoute component={ Home } />
 		{
 		/**
 		 * Below needed for portlet on front page when page

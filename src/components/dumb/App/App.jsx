@@ -27,8 +27,4 @@ const App = ({ children }) => (
 	</div>
 );
 
-App.propTypes = {
-	children: React.PropTypes.any
-};
-
 export default App;
